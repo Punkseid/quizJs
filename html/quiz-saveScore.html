@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBQUIZ</title>
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap">
+</head>
+<body> 
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 class="finalScore" id="finalScore">0</h1>
+            <form class="end-form-container">
+                <h2 id="end-text">
+                    Digite o seu username para salvar seus pontos!
+                </h2>
+                <input type="text" id="username" placeholder="Digite seu username">
+                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Salvar</button>
+            </form>
+            
+            <a href="/html/quiz-game.html" class="btn">Jogar novamente</a>
+            <a href="/quiz-home.html" class="btn">Go Home</a>
+        </div>
+    </div>
+
+    <script src="/js/saveScore.js"></script>
+</body>
+</html>

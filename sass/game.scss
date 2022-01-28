@@ -1,0 +1,76 @@
+$font: 'Nova Square', cursive;
+$btn-color-primary: rgb(25, 51, 199);
+$text-color: rgb(236, 228, 228);
+.choice-container{
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    padding: 1.2rem;
+    padding-right: 2px;
+    background-color: $btn-color-primary;
+    color: $text-color;
+    font-family: $font;
+    border-radius: 5px;
+    font-size: 2rem;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.02);
+        transition: 0.2s ease-in;
+    }
+    .choice-prefix{
+        padding-left: 1rem;
+    }
+    .coiche-text{
+        width: 100%;
+        padding-left: 2rem;
+    }
+}
+
+#hud{
+    display: flex;
+    justify-content: center;
+    .hud-prefix {
+        text-align: center;
+        font-size: 2rem;
+    }
+    #score {
+        text-align: center;
+        margin-left: 1.5rem;
+        font-size: 4rem;
+    }
+    #progressBar{
+        width: 20rem;
+        height: 2rem;
+        border: 0.2rem solid black;
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+        border-radius: 50px;
+        overflow: hidden;
+    }   
+    #progressBarFull{
+        background-color: green;
+        width: 20rem;
+        height: 2rem;
+    }
+}
+#question{
+    margin-bottom: 4rem;
+}
+
+.correct {
+background: linear-gradient(32deg, rgba(11, 223, 35) 0%, rgb(41, 232, 111) 100%);
+}
+
+.incorrect {
+background: linear-gradient(32deg, rgba(230, 29, 29) 0%, rgb(224, 11, 11)100%);
+}
+
+.getCorrect{
+    background: linear-gradient(32deg, rgba(11, 223, 35) 0%, rgb(41, 232, 111) 100%);
+}
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+      min-width: 40rem;
+    }
+  }

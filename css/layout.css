@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: #140149;
+}
+
+.container {
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: "Nova Square", cursive;
+  color: #ece4e4;
+}
+.container #main-title-quiz {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+.container span {
+  margin-bottom: 5rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.container h2 {
+  font-size: 2.2rem;
+  margin: 2rem 0;
+}
+.container .flex-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.container .flex-center {
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+.container .btn {
+  font-size: 2.4rem;
+  width: 20rem;
+  padding: 2rem 5px;
+  background-color: #1933c7;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ece4e4;
+}
+.container .highScore-btn {
+  background: #d6c806;
+  color: black;
+}
+.container .btn:hover {
+  transform: scale(1.02);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.container .btn[disabled] {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.end-form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30rem;
+}
+
+input {
+  margin-bottom: 1rem;
+  width: 20rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  border: none;
+  box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+#username {
+  margin-bottom: 3rem;
+  width: 100%;
+  outline: none;
+}
+
+#end-text {
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+}
+
+#saveScoreBtn {
+  border: none;
+}
+
+.finalScore {
+  margin: 0;
+  font-size: 4rem;
+}
+
+@media (min-width: 300px) {
+  .container h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 320px) {
+  .container h2 {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 400px) {
+  .container h2 {
+    font-size: 2.2rem;
+  }
+}
+
+/*# sourceMappingURL=layout.css.map */

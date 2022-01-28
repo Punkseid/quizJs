@@ -1,0 +1,145 @@
+$body-color: rgb(20, 1, 73);
+$font: 'Nova Square', cursive;
+$btn-color-primary: rgb(25, 51, 199);
+$btn-color-secundary: rgb(214, 200, 6);
+$text-color: rgb(236, 228, 228);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background: $body-color;
+}
+
+.container{
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: $font;
+    color: $text-color;
+    #main-title-quiz{
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+    span{
+        margin-bottom: 5rem;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 2.2rem;
+        margin: 2rem 0;
+    }
+    .flex-column{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .flex-center{
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+    .btn{
+        font-size: 2.4rem;
+        width: 20rem;
+        padding: 2rem 5px;
+        background-color: $btn-color-primary;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: $text-color;
+    }
+    .highScore-btn{
+        background: $btn-color-secundary;
+        color: black;
+    }
+    .btn:hover{
+        transform: scale(1.02);
+        transition: 0.2s;
+        cursor: pointer;
+    }
+    .btn[disabled]{
+        cursor: not-allowed;
+        box-shadow: none;
+        transform: none;
+    }
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+
+.end-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
+  
+input::placeholder {
+color: #aaa;
+}
+
+#username {
+margin-bottom: 3rem;
+width: 100%;
+outline: none;
+}
+
+#end-text {
+font-size: 2.4rem;
+color: #fff;
+text-align: center;
+}
+
+#saveScoreBtn{
+border: none;
+
+}
+.finalScore{
+    margin: 0;
+    font-size: 4rem;
+}
+
+@media(min-width: 300px){
+    .container h2{
+        font-size: 1.5rem;
+    }
+}
+@media(min-width: 320px){
+    .container h2{
+        font-size: 1.8rem;
+    }
+}
+@media(min-width: 400px){
+    .container h2{
+        font-size: 2.2rem;
+    }
+}

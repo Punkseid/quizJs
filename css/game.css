@@ -1,0 +1,76 @@
+.choice-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  padding: 1.2rem;
+  padding-right: 2px;
+  background-color: #1933c7;
+  color: #ece4e4;
+  font-family: "Nova Square", cursive;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+.choice-container:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: 0.2s ease-in;
+}
+.choice-container .choice-prefix {
+  padding-left: 1rem;
+}
+.choice-container .coiche-text {
+  width: 100%;
+  padding-left: 2rem;
+}
+
+#hud {
+  display: flex;
+  justify-content: center;
+}
+#hud .hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+#hud #score {
+  text-align: center;
+  margin-left: 1.5rem;
+  font-size: 4rem;
+}
+#hud #progressBar {
+  width: 20rem;
+  height: 2rem;
+  border: 0.2rem solid black;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+  border-radius: 50px;
+  overflow: hidden;
+}
+#hud #progressBarFull {
+  background-color: green;
+  width: 20rem;
+  height: 2rem;
+}
+
+#question {
+  margin-bottom: 4rem;
+}
+
+.correct {
+  background: linear-gradient(32deg, #0bdf23 0%, #29e86f 100%);
+}
+
+.incorrect {
+  background: linear-gradient(32deg, #e61d1d 0%, #e00b0b 100%);
+}
+
+.getCorrect {
+  background: linear-gradient(32deg, #0bdf23 0%, #29e86f 100%);
+}
+
+@media screen and (max-width: 768px) {
+  .choice-container {
+    min-width: 40rem;
+  }
+}
+
+/*# sourceMappingURL=game.css.map */
