@@ -3,6 +3,7 @@ const progressBar = document.querySelector('#progressBarFull')
 const scoreText = document.querySelector('#score')
 const question = document.querySelector('#question')
 const choices = Array.from(document.querySelectorAll('.coiche-text'))
+const choice_container = Array.from(document.querySelectorAll('.choice-container'))
 
 let currentQuestion = {}
 let acceptingAnswers = true
@@ -133,26 +134,30 @@ getNewQuestion = () => {
 }
 choices.forEach(choice =>{
     choice.addEventListener('click', e =>{
-
+        
         const selectedChoice = e.target
         const selectedAnswer = selectedChoice.dataset['number']
+        answer = currentQuestion.answer
+        const rightAnswer = document.querySelector(`.coiche-text[data-number="${answer}"]`)
         
         let addingClass = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
-
         if(addingClass === 'correct'){
             incrementScore(SCORE_POINTS)
         }
         else{
-            const answer = currentQuestion.answer
+            
+            console.log(rightAnswer);
+            rightAnswer.parentElement.classList.add('correct')
         }
         selectedChoice.parentElement.classList.add(addingClass)
-
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(addingClass)
+            rightAnswer.parentElement.classList.remove('correct')
             getNewQuestion()
         }, 500)
     })
 })
+
 
 incrementScore = num =>{
     score += num
