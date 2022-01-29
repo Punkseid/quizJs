@@ -115,7 +115,6 @@ getNewQuestion = () => {
         
         return window.location.assign('/html/quiz-saveScore.html')
     }
-    console.log(avaliableQuestion);
     questionCounter++;
     progressText.innerText = `questão ${questionCounter} de ${MAX_QUESTIONS}`
     progressBar.style.width = `${(questionCounter/MAX_QUESTIONS)*100}%`
@@ -145,8 +144,6 @@ choices.forEach(choice =>{
             incrementScore(SCORE_POINTS)
         }
         else{
-            
-            console.log(rightAnswer);
             rightAnswer.parentElement.classList.add('correct')
         }
         selectedChoice.parentElement.classList.add(addingClass)
