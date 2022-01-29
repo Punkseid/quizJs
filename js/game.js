@@ -154,7 +154,7 @@ choices.forEach(choice =>{
             selectedChoice.parentElement.classList.remove(addingClass)
             rightAnswer.parentElement.classList.remove('correct')
             getNewQuestion()
-        }, 500)
+        }, 1000)
     })
 })
 
